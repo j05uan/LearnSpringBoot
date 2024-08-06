@@ -30,6 +30,8 @@ public class UserController {
     //     model.addAttribute("users", users);
     //     return "list";
     // }
+
+    
     @GetMapping("/list")
     public String list(ModelMap model){
         List<User> users = Arrays.asList(
