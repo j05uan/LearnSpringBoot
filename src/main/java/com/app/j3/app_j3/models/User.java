@@ -4,27 +4,28 @@ public class User {
     
     private String nombre;
     private String apellido;
-    public User() {
-    }
-
-    // No es necesario el constructor con las variables
+    private String email;
+    //Constructor de clase
     public User(String nombre, String apellido) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    this.nombre = nombre;
+    this.apellido = apellido;
     }
     public String getNombre() {
-        return nombre;
+    return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     public String getApellido() {
-        return apellido;
+    return apellido;
     }
     public void setApellido(String apellido) {
-        this.apellido = apellido;
+    this.apellido = apellido;
     }
-
-    
-
+    public String getEmail() {
+    return email;
+    }
+    public void setEmail(String email) {
+    this.email = email;
+    }
 }
