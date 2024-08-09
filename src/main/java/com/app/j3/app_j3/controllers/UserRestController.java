@@ -1,37 +1,30 @@
 package com.app.j3.app_j3.controllers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.app.j3.app_j3.models.User;
-import com.app.j3.app_j3.models.dto.UserDto;
 
 @RestController
 @RequestMapping("/api")
 public class UserRestController {
     
-    public  UserDto details() {
-        UserDto userDto = new UserDto();
-        User user = new  User("Juan Pablo", "Lòpez");
-        userDto.setTitle("Desarrollando con Spring Boot");
-        userDto.setUser(user);
-        return userDto;
-    }
+    // public  UserDto details() {
+    //     UserDto userDto = new UserDto();
+    //     User user = new  User("Juan Pablo", "Lòpez");
+    //     userDto.setTitle("Desarrollando con Spring Boot");
+    //     userDto.setUser(user);
+    //     return userDto;
+    // }
 
-    @GetMapping("/list-details")
-    public List<User> listdetails(){
-        User user = new User("Juan","Perez");
-        User userA = new User("Camilo","Hernandez");
-        User userB = new User("Martha","Estupiñan");
-        List<User> lstUsers = new ArrayList<>();
-        lstUsers.add(user);
-        lstUsers.add(userA);
-        lstUsers.add(userB);
-        return lstUsers;
+    // @GetMapping("/list-details")
+    // public List<User> listdetails(){
+    //     User user = new User("Juan","Perez");
+    //     User userA = new User("Camilo","Hernandez");
+    //     User userB = new User("Martha","Estupiñan");
+    //     List<User> lstUsers = new ArrayList<>();
+    //     lstUsers.add(user);
+    //     lstUsers.add(userA);
+    //     lstUsers.add(userB);
+    //     return lstUsers;
     }
 
 
@@ -45,4 +38,4 @@ public class UserRestController {
     //     return body;
     // }
     
-}
+

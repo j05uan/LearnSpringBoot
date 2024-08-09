@@ -16,8 +16,11 @@ public class UserController {
 
     @GetMapping("/details")
     public String details(Model model) {
-        User user = new User("Juan Pablo",  "López");
-        user.setEmail("juampislopez@gmail.com");
+        User user = new User();
+        user.setCedula(123456);
+        user.setNombre("Juan");
+        user.setApellido("Lopez");
+        user.setEmail("email");
         model.addAttribute("title", "Desarrollando con Spring boot ");
         model.addAttribute("user", user);        
         return "details";
@@ -34,10 +37,13 @@ public class UserController {
     
     @GetMapping("/list")
     public String list(ModelMap model){
+        User user = new User();
+        user.setCedula(123456);
+        user.setNombre("Juan");
+        user.setApellido("Lopez");
+        user.setEmail("email");
         List<User> users = Arrays.asList(
-        new User("Carlos", "Perez"),
-        new User("Martha","Sanchez"),
-        new User("Vicente","Camargo")
+        user
         );
         model.addAttribute("title", "Listado de Usuarios");
         model.addAttribute("users", users);

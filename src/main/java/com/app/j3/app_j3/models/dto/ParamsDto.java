@@ -9,5 +9,9 @@ public class ParamsDto {
     public void setMessage(String message) {
         this.message = message;
     }
+    public void setCode(Integer code) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setCode'");
+    }
 
 }
